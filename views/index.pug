@@ -1,0 +1,33 @@
+html 
+
+    head 
+
+     title= "Tela de login com Pug"
+    link(rel='stylesheet', href='/css/style.css', type='text/css')
+     script(src='/JavaScript/Script.js')
+    
+    
+
+    body 
+
+     div#login-container 
+     h1  Login
+     form(action='', method='POST')
+    p
+      p          Email: 
+      input(type='email', name='E-mail', value='Email' id = "email")
+      p         Senha: 
+      input(type='password', name='password', value='Digite sua Senha' )
+      p
+      a(href='//google.com') Esqueceu a senha?
+
+      p 
+
+      div#register-container
+      p  Ainda não tem conta?
+      a(href='//google.com') Registrar
+
+      
+    input(type='submit', value='Submit', onclick="logar()")logar();
+
+    
